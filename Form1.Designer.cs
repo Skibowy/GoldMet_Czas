@@ -43,6 +43,7 @@
 			this.cbElement = new System.Windows.Forms.ComboBox();
 			this.lblElement = new System.Windows.Forms.Label();
 			this.btnZaznaczWszystkie = new System.Windows.Forms.Button();
+			this.btnDodaj = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// clbListaTowarow
@@ -56,9 +57,9 @@
 			// btnOblicz
 			// 
 			this.btnOblicz.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.btnOblicz.Location = new System.Drawing.Point(450, 380);
+			this.btnOblicz.Location = new System.Drawing.Point(273, 333);
 			this.btnOblicz.Name = "btnOblicz";
-			this.btnOblicz.Size = new System.Drawing.Size(147, 56);
+			this.btnOblicz.Size = new System.Drawing.Size(194, 56);
 			this.btnOblicz.TabIndex = 1;
 			this.btnOblicz.Text = "Oblicz";
 			this.btnOblicz.UseVisualStyleBackColor = true;
@@ -90,7 +91,7 @@
 			this.lblWieszak.BackColor = System.Drawing.Color.Transparent;
 			this.lblWieszak.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
 			this.lblWieszak.ForeColor = System.Drawing.Color.Gold;
-			this.lblWieszak.Location = new System.Drawing.Point(273, 160);
+			this.lblWieszak.Location = new System.Drawing.Point(594, 85);
 			this.lblWieszak.Name = "lblWieszak";
 			this.lblWieszak.Size = new System.Drawing.Size(123, 31);
 			this.lblWieszak.TabIndex = 4;
@@ -99,7 +100,7 @@
 			// txtWieszaki
 			// 
 			this.txtWieszaki.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.txtWieszaki.Location = new System.Drawing.Point(273, 194);
+			this.txtWieszaki.Location = new System.Drawing.Point(594, 119);
 			this.txtWieszaki.Name = "txtWieszaki";
 			this.txtWieszaki.Size = new System.Drawing.Size(194, 38);
 			this.txtWieszaki.TabIndex = 5;
@@ -110,7 +111,7 @@
 			this.lblIleNaWieszaku.BackColor = System.Drawing.Color.Transparent;
 			this.lblIleNaWieszaku.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
 			this.lblIleNaWieszaku.ForeColor = System.Drawing.Color.Gold;
-			this.lblIleNaWieszaku.Location = new System.Drawing.Point(273, 235);
+			this.lblIleNaWieszaku.Location = new System.Drawing.Point(594, 160);
 			this.lblIleNaWieszaku.Name = "lblIleNaWieszaku";
 			this.lblIleNaWieszaku.Size = new System.Drawing.Size(200, 31);
 			this.lblIleNaWieszaku.TabIndex = 6;
@@ -119,7 +120,7 @@
 			// txtIleNaWieszaku
 			// 
 			this.txtIleNaWieszaku.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.txtIleNaWieszaku.Location = new System.Drawing.Point(273, 269);
+			this.txtIleNaWieszaku.Location = new System.Drawing.Point(594, 194);
 			this.txtIleNaWieszaku.Name = "txtIleNaWieszaku";
 			this.txtIleNaWieszaku.Size = new System.Drawing.Size(194, 38);
 			this.txtIleNaWieszaku.TabIndex = 7;
@@ -129,9 +130,9 @@
 			this.dtpCzasUkonczenia.CalendarMonthBackground = System.Drawing.SystemColors.InactiveBorder;
 			this.dtpCzasUkonczenia.CalendarTitleForeColor = System.Drawing.SystemColors.Desktop;
 			this.dtpCzasUkonczenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.dtpCzasUkonczenia.Location = new System.Drawing.Point(279, 336);
+			this.dtpCzasUkonczenia.Location = new System.Drawing.Point(273, 395);
 			this.dtpCzasUkonczenia.Name = "dtpCzasUkonczenia";
-			this.dtpCzasUkonczenia.Size = new System.Drawing.Size(509, 38);
+			this.dtpCzasUkonczenia.Size = new System.Drawing.Size(515, 38);
 			this.dtpCzasUkonczenia.TabIndex = 8;
 			// 
 			// lblKosze
@@ -140,7 +141,7 @@
 			this.lblKosze.BackColor = System.Drawing.Color.Transparent;
 			this.lblKosze.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
 			this.lblKosze.ForeColor = System.Drawing.Color.Gold;
-			this.lblKosze.Location = new System.Drawing.Point(557, 235);
+			this.lblKosze.Location = new System.Drawing.Point(588, 317);
 			this.lblKosze.Name = "lblKosze";
 			this.lblKosze.Size = new System.Drawing.Size(90, 31);
 			this.lblKosze.TabIndex = 9;
@@ -149,7 +150,7 @@
 			// txtKosze
 			// 
 			this.txtKosze.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.txtKosze.Location = new System.Drawing.Point(563, 269);
+			this.txtKosze.Location = new System.Drawing.Point(594, 351);
 			this.txtKosze.Name = "txtKosze";
 			this.txtKosze.Size = new System.Drawing.Size(194, 38);
 			this.txtKosze.TabIndex = 10;
@@ -186,6 +187,17 @@
 			this.btnZaznaczWszystkie.UseVisualStyleBackColor = true;
 			this.btnZaznaczWszystkie.Click += new System.EventHandler(this.btnZaznaczWszystkie_Click);
 			// 
+			// btnDodaj
+			// 
+			this.btnDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.btnDodaj.Location = new System.Drawing.Point(273, 176);
+			this.btnDodaj.Name = "btnDodaj";
+			this.btnDodaj.Size = new System.Drawing.Size(194, 56);
+			this.btnDodaj.TabIndex = 14;
+			this.btnDodaj.Text = "Dodaj";
+			this.btnDodaj.UseVisualStyleBackColor = true;
+			this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
+			// 
 			// GoldMet
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +205,7 @@
 			this.BackColor = System.Drawing.SystemColors.WindowFrame;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(800, 445);
+			this.Controls.Add(this.btnDodaj);
 			this.Controls.Add(this.btnZaznaczWszystkie);
 			this.Controls.Add(this.lblElement);
 			this.Controls.Add(this.cbElement);
@@ -234,6 +247,7 @@
 		private System.Windows.Forms.ComboBox cbElement;
 		private System.Windows.Forms.Label lblElement;
 		private System.Windows.Forms.Button btnZaznaczWszystkie;
+		private System.Windows.Forms.Button btnDodaj;
 	}
 }
 

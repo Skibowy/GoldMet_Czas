@@ -23,7 +23,6 @@ namespace GoldMet_Czas
 		string excelFilePath = "C:/Users/dawis/Desktop/a.xls";
 		string txtFilePath = "C:/Users/dawis/Desktop/elementy.txt";
 		List<Element> elements = new List<Element>();
-		List<ElementZExcela> elementyZExcela = new List<ElementZExcela>();
 		Dictionary<string, string> iloscDlaIdentyfikatora = new Dictionary<string, string>();
 		public GoldMet()
 		{
@@ -42,14 +41,7 @@ namespace GoldMet_Czas
 					{
 						continue;
 					}
-					ElementZExcela elementZExcela = new ElementZExcela
-					{
-						Id = int.Parse(row[0].ToString()),
-						Name = row[1].ToString(),
-						Ilosc = int.Parse(row[5].ToString())
-					};
-					elementyZExcela.Add(elementZExcela);
-					clbListaTowarow.Items.Add(row[0].ToString() + " " + row[1].ToString()/* + "  Sztuk: " + row[5].ToString()*/, true);
+					clbListaTowarow.Items.Add(row[0].ToString() + " " + row[1].ToString(), true);
 					iloscDlaIdentyfikatora.Add(row[0].ToString(), row[5].ToString());
 				}
 			}
@@ -195,13 +187,6 @@ namespace GoldMet_Czas
 			public int IleNaWieszaku { get; set; }
 		}
 
-		private class ElementZExcela
-		{
-			public int Id { get; set; }
-			public string Name { get; set; }
-			public int Ilosc { get; set; }
-		}
-
 		private static List<Element> LoadElementsFromFile(string path)
 		{
 			List<Element> elements = new List<Element>();
@@ -238,6 +223,11 @@ namespace GoldMet_Czas
 				}
 			}
 			return 0;
+		}
+
+		private void btnDodaj_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Ble");
 		}
 	}
 }
