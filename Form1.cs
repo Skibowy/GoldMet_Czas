@@ -19,6 +19,7 @@ namespace GoldMet_Czas
 		decimal wieszaki = 0;
 		decimal ileNaWieszaku = 0;
 		decimal ileKoszy = 0;
+		decimal ileKoszyDziennie = 0;
 		string excelFilePath = "C:/Users/dawis/Desktop/a.xls";
 		string txtFilePath = "C:/Users/dawis/Desktop/elementy.txt";
 		List<Element> elements = new List<Element>();
@@ -60,6 +61,7 @@ namespace GoldMet_Czas
 			if (File.Exists(txtFilePath))
 			{
 				elements = LoadElementsFromFile(txtFilePath);
+				ileKoszyDziennie = LoadFirstElementFromFile(txtFilePath);
 			}
 			else
 			{
@@ -148,7 +150,7 @@ namespace GoldMet_Czas
 
 		private DateTime CalculateCompletionDate(int ileKoszy)
 		{
-			int totalDays = (int)Math.Ceiling(ileKoszy / 10.0);
+			int totalDays = (int)Math.Ceiling(ileKoszy / ileKoszyDziennie);
 			DateTime startDate = DateTime.Today;
 			DateTime completionDate = startDate;
 
@@ -207,6 +209,10 @@ namespace GoldMet_Czas
 			foreach (var line in File.ReadLines(path))
 			{
 				string[] parts = line.Split(';');
+				if (int.Parse(parts[0]) == 0)
+				{
+					continue;
+				}
 				if (parts.Length == 4)
 				{
 					Element element = new Element
@@ -219,6 +225,19 @@ namespace GoldMet_Czas
 				}
 			}
 			return elements;
+		}
+
+		private decimal LoadFirstElementFromFile(string path)
+		{
+			foreach (var line in File.ReadLines(path))
+			{
+				string[] parts = line.Split(';');
+				if (int.Parse(parts[0]) == 0)
+				{
+					return int.Parse(parts[1]);
+				}
+			}
+			return 0;
 		}
 	}
 }
