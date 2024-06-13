@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|c:\\users\\dawis\\source\\repos\\goldmet_czas\\element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|solutionrelative:element.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EBA04AD-ED98-4BA6-A11A-71DF12418BE4}|GoldMet_Czas.csproj|C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "Element.cs",
+              "DocumentMoniker": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\Element.cs",
+              "RelativeDocumentMoniker": "Element.cs",
+              "ToolTip": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\Element.cs",
+              "RelativeToolTip": "Element.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:35:20.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "elementy.txt",
               "DocumentMoniker": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\Resources\\elementy.txt",
               "RelativeDocumentMoniker": "Resources\\elementy.txt",
@@ -58,12 +75,11 @@
               "RelativeToolTip": "Resources\\elementy.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-12T18:29:49.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T18:29:49.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.resx",
               "DocumentMoniker": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\Form1.resx",
               "RelativeDocumentMoniker": "Form1.resx",
@@ -75,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
@@ -94,14 +110,14 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAgwLsAAAADAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T15:26:47.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -109,8 +125,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T19:11:02.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T19:11:02.884Z"
             },
             {
               "$type": "Document",
@@ -126,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Resources.Designer.cs",
               "DocumentMoniker": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\Properties\\Resources.Designer.cs",
               "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
@@ -134,11 +149,12 @@
               "RelativeToolTip": "Properties\\Resources.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T19:11:25.936Z"
+              "WhenOpened": "2024-06-07T19:11:25.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Properties\\Resources.resx",
@@ -150,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\dawis\\source\\repos\\GoldMet_Czas\\packages\\EPPlus.7.1.3\\readme.txt",
               "RelativeDocumentMoniker": "packages\\EPPlus.7.1.3\\readme.txt",

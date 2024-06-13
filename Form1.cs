@@ -15,6 +15,7 @@ namespace GoldMet_Czas
 {
 	public partial class GoldMet : Form
 	{
+		int tymczasowyLicznik = 0;
 		decimal ilosc = 0;
 		decimal wieszaki = 0;
 		decimal ileNaWieszaku = 0;
@@ -179,14 +180,6 @@ namespace GoldMet_Czas
 			}
 		}
 
-		private class Element
-		{
-			public int Id { get; set; }
-			public string Name { get; set; }
-			public int IleWieszakow { get; set; }
-			public int IleNaWieszaku { get; set; }
-		}
-
 		private static List<Element> LoadElementsFromFile(string path)
 		{
 			List<Element> elements = new List<Element>();
@@ -227,7 +220,10 @@ namespace GoldMet_Czas
 
 		private void btnDodaj_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Ble");
+			tymczasowyLicznik++;
+			clbListaTowarow.Items.Add("T" + tymczasowyLicznik.ToString("D5") + " " + cbElement.Text, true);
+			iloscDlaIdentyfikatora.Add("T" + tymczasowyLicznik.ToString("D5"), txtIlosc.Text);
+			txtIlosc.Text = "0";
 		}
 	}
 }
