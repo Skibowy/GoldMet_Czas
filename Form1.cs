@@ -16,6 +16,7 @@ namespace GoldMet_Czas
 	public partial class GoldMet : Form
 	{
 		int tymczasowyLicznik = 0;
+		decimal dodajDoWynikuDni = 0;
 		decimal ilosc = 0;
 		decimal wieszaki = 0;
 		decimal ileNaWieszaku = 0;
@@ -54,7 +55,8 @@ namespace GoldMet_Czas
 			if (File.Exists(txtFilePath))
 			{
 				elements = LoadElementsFromFile(txtFilePath);
-				ileKoszyDziennie = LoadFirstElementFromFile(txtFilePath);
+				ileKoszyDziennie = LoadFirstElementFromFile(txtFilePath, 1);
+				dodajDoWynikuDni = LoadFirstElementFromFile(txtFilePath, 2);
 			}
 			else
 			{
@@ -143,7 +145,7 @@ namespace GoldMet_Czas
 
 		private DateTime CalculateCompletionDate(int ileKoszy)
 		{
-			int totalDays = (int)Math.Ceiling(ileKoszy / ileKoszyDziennie);
+			int totalDays = (int)Math.Ceiling(ileKoszy / ileKoszyDziennie) + (int)dodajDoWynikuDni;
 			DateTime startDate = DateTime.Today;
 			DateTime completionDate = startDate;
 
@@ -205,14 +207,14 @@ namespace GoldMet_Czas
 			return elements;
 		}
 
-		private decimal LoadFirstElementFromFile(string path)
+		private decimal LoadFirstElementFromFile(string path, int fragment)
 		{
 			foreach (var line in File.ReadLines(path))
 			{
 				string[] parts = line.Split(';');
 				if (int.Parse(parts[0]) == 0)
 				{
-					return int.Parse(parts[1]);
+					return int.Parse(parts[fragment]);
 				}
 			}
 			return 0;
