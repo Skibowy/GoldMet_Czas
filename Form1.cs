@@ -23,7 +23,9 @@ namespace GoldMet_Czas
 		decimal ileKoszy = 0;
 		decimal ileKoszyDziennie = 0;
 		string excelFilePath = "C:/Users/dawis/Desktop/a.xls";
-		string txtFilePath = "C:/Users/dawis/Desktop/elementy.txt";
+		string txtFilePath = "C:/Users/dawis/Desktop/elementy.odt";
+		//string excelFilePath = "C:/Users/admin/Desktop/GoldMet_Czas/a.xls";
+		//string txtFilePath = "C:/Users/admin/Desktop/GoldMet_Czas/elementy.odt";
 		List<Element> elements = new List<Element>();
 		Dictionary<string, string> iloscDlaIdentyfikatora = new Dictionary<string, string>();
 		public GoldMet()
@@ -60,15 +62,17 @@ namespace GoldMet_Czas
 			}
 			else
 			{
-				Console.WriteLine("Plik '.txt' nie istnieje.");
+				Console.WriteLine("Plik '.odt' nie istnieje.");
 			}
 
 			this.cbElement.DropDownStyle = ComboBoxStyle.DropDownList;
-			this.cbElement.DataSource = elements;
+			this.cbElement.DataSource = new BindingSource(elements, null);
 			this.cbElement.SelectedIndex = 0;
 			this.cbElement.DisplayMember = "Name";
 			this.cbElement.ValueMember = "Name";
 			this.cbElement.SelectedIndexChanged += new System.EventHandler(this.cbElement_SelectedIndexChanged);
+
+			txtSearch.TextChanged += new EventHandler(txtSearch_TextChanged);
 		}
 
 		private void btnOblicz_Click(object sender, EventArgs e)
@@ -226,6 +230,16 @@ namespace GoldMet_Czas
 			clbListaTowarow.Items.Add("T" + tymczasowyLicznik.ToString("D5") + " " + cbElement.Text, true);
 			iloscDlaIdentyfikatora.Add("T" + tymczasowyLicznik.ToString("D5"), txtIlosc.Text);
 			txtIlosc.Text = "0";
+		}
+
+		private void txtSearch_TextChanged(object sender, EventArgs e)
+		{
+			string searchText = txtSearch.Text.ToLower();
+			var filteredElements = elements.Where(el => el.Name.ToLower().Contains(searchText)).ToList();
+
+			cbElement.DataSource = new BindingSource(filteredElements, null);
+			cbElement.DisplayMember = "Name";
+			cbElement.ValueMember = "Name";
 		}
 	}
 }
